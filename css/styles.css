@@ -517,6 +517,8 @@ header {
   .hero-content p {
       font-size: 1rem;
   }
+
+  
   /* Carousel Styling */
 .about {
   background-image: url('../img/image.png');
@@ -560,7 +562,7 @@ header {
 }
 
 .carousel-slide img {
-  max-width: 500px; /* Ensure the image size */
+  max-width: 280px; /* Ensure the image size */
   margin-bottom: 1.5rem; /* Add space below the image */
   border: 5px solid #000000; /* Add a light gray border as a frame */
   border-radius: 10px; /* Optional: Rounded corners for a softer look */
@@ -602,14 +604,14 @@ header {
 
 .carousel-slide img[alt="Profile 7"] {
   width: 900px; /* Adjust width */
-  height: 450px; /* Adjust height */
+  height: 250px; /* Adjust height */
   object-fit: cover; /* Ensure proper aspect ratio */
   border-radius: 5px; /* Optional: Add rounded corners */
   margin-bottom: 1.5rem;
 }
 
 .carousel-slides p{
-  font-size: 1.5rem;
+  font-size: 1.0rem;
   font-weight: 700;
   color:#000000;
   margin: -1rem 0; /* Add proper spacing without pushing it too far */
