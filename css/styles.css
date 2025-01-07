@@ -1,0 +1,648 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Use a more modern font */
+  line-height: 1.6;
+  background-color: #f4f4f4; /* Add a light background for the page */
+  color: #333; /* Dark text color for better readability */
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit color for links */
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 2rem 2%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for modern look */
+}
+
+#nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem; /* Space out the links more evenly */
+}
+
+#nav-links .logo img {
+  max-width: 200px; /* Logo size adjustment */
+  height: auto;
+}
+
+#nav-links .desktop-link {
+  color: #333;
+  font-size: 1.1rem;
+  text-transform: uppercase; /* Uppercase letters for a more modern, bold look */
+  letter-spacing: 1px; /* Slight letter spacing for clarity */
+  transition: color 0.3s ease;
+}
+
+#nav-links .desktop-link:hover {
+  color: #f39c12; /* Modern hover color */
+}
+
+.contact-btn {
+  background-color: #f39c12;
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px; /* Rounded button for a sleek look */
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #e67e22;
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+#mobile-nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 282px;
+  right: 0;
+  background-color: #333;
+  padding: 1rem;
+  width: 200px; /* Mobile menu width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Make sure it is on top of the background image */
+}
+
+#mobile-nav li {
+  margin: 1rem 0;
+}
+
+#mobile-nav li a {
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+
+}
+
+#mobile-nav li a:hover {
+  color: #f39c12; /* Modern hover effect */
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('../img/image.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: rgb(3, 3, 3);
+  text-align: center;
+  padding: 100px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-size: 130%;
+  
+}
+
+.hero-content {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: -1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.hero-content .social-links {
+  display: flex; /* Align the icons in a row */
+  justify-content: center; /* Center the icons horizontally */
+  gap: 20px; /* Add space between icons */
+  margin-bottom: -1rem; /* Add spacing below the social links */
+}
+
+.hero-content .social-links a {
+  color: #000000; /* Set default icon color */
+  font-size: 3rem; /* Adjust icon size */
+  transition: transform 0.3s ease, color 0.3s ease; /* Add smooth hover effect */
+}
+.hero-content .social-links a:hover {
+  color: #000000; /* Change icon color on hover (blue) */
+  transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
+
+.hero-image img {
+  max-width: 340px;
+  border-radius: 50%;
+  margin-right: 300px;
+  
+}
+
+/* Button Styling */
+.hero-content .btn {
+  background-color: #f39c12;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.hero-content .btn:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+
+/* Carousel Styling */
+.about {
+  background-image: url('../img/image.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: rgb(3, 3, 3);
+  text-align: center;
+  padding: 20px 20px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-size: 136.5%;
+}
+
+.about h2 {
+  font-size: 2.5rem; /* Adjust the heading size */
+  margin-bottom: -30px; /* Add spacing below the heading */
+  color: #333; /* Ensure good contrast with background */
+}
+
+
+.carousel {
+  position: relative;
+  max-width: 2000px; /* Increase max-width for larger carousel */
+  margin: auto;
+  overflow: hidden;
+  height: 760px;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  text-align: center;
+  padding: 2rem; /* Increase padding for more space */
+}
+
+.carousel-slide img {
+  max-width: 900px; /* Ensure the image size */
+  margin-bottom: 1.5rem; /* Add space below the image */
+  border: 5px solid #000000; /* Add a light gray border as a frame */
+  border-radius: 10px; /* Optional: Rounded corners for a softer look */
+}
+
+.carousel-slide img[alt="Profile 3"] {
+  width: 700px; /* Adjust width */
+  height: 600px; /* Adjust height */
+  object-fit: cover; /* Ensure proper aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  margin-bottom: 1.5rem;
+  
+}
+
+.carousel-slide img[alt="Profile 4"] {
+  width: 900px; /* Adjust width */
+  height: 590px; /* Adjust height */
+  object-fit: cover; /* Ensure proper aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  margin-bottom: 1.5rem;
+  
+}
+
+.carousel-slide img[alt="Profile 5"] {
+  width: 900px; /* Adjust width */
+  height: 590px; /* Adjust height */
+  object-fit: cover; /* Ensure proper aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  margin-bottom: 1.5rem;
+  
+}
+.carousel-slide img[alt="Profile 6"] {
+  width: 900px; /* Adjust width */
+  height: 550px; /* Adjust height */
+  object-fit: cover; /* Ensure proper aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  margin-bottom: 1.5rem;
+}
+
+.carousel-slide img[alt="Profile 7"] {
+  width: 900px; /* Adjust width */
+  height: 550px; /* Adjust height */
+  object-fit: cover; /* Ensure proper aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  margin-bottom: 1.5rem;
+}
+
+.carousel-slides p{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color:#000000;
+  margin: -1rem 0; /* Add proper spacing without pushing it too far */
+  background-color: #f0f0f0; /* Add white background */
+  border-radius: 5px; /* Optional: Add rounded corners for a modern look */
+  display: inline-block; /* Keeps the background size close to the text */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4); /* Optional: Add a subtle shadow */
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem; /* Increase button size */
+  cursor: pointer;
+  font-size: 2rem; /* Increase button icon size */
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 20px; /* Adjust position for larger buttons */
+}
+
+.next-btn {
+  right: 20px; /* Adjust position for larger buttons */
+}
+
+.carousel-btn:hover {
+  background-color: #f39c12;
+}
+
+.projects {
+  background-image: url('../img/image.png'); /* Add your desired background image */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 20px 20px;
+  text-align: center;
+  color: rgb(3, 3, 3); /* Adjust text color for readability */
+  background-size: 100%; /* Same as about */
+  position: relative;
+}
+#videoContainer {
+  display: none;
+}
+
+.projects h2 {
+  font-size: 2.5rem; /* Adjust the heading size */
+  margin-bottom: 20px; /* Add spacing below the heading */
+  color: #333; /* Ensure good contrast with background */
+}
+
+.projects p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-content p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.project-link {
+  display: inline-block;
+  margin: 0.5rem 0.5rem 0 0;
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.project-link:hover {
+  background: #0056b3;
+}
+
+.view-video-btn {
+  display: inline-block;
+  margin: 0.5rem 0.5rem 0 0;
+  padding: 0.8rem 1rem;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+  border: none; /* Remove any border */
+}
+.view-video-btn:hover {
+  background: #0056b3;
+}
+
+.responsive-video {
+  width: 80%; /* Adjust percentage as needed */
+  max-width: 190px; /* Optional: Limit the maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #ccc; /* Optional: Add a border */
+  border-radius: 10px; /* Optional: Rounded corners */
+}
+
+
+.project-card .fish-market-img {
+  width: 300px;
+  height: 200px;
+
+  border: 2px solid blue;
+}
+.contact {
+  background-image: url('../img/image.png'); /* Add your desired background image */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 20px 20px;
+  text-align: center;
+  color: rgb(3, 3, 3); /* Adjust text color for readability */
+  background-size: 100%; /* Same as about */
+  position: relative;
+}
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.email-contact {
+  margin-bottom: 1.5rem;
+}
+
+.email-contact a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.email-contact a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: #333;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #nav-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #nav-links .desktop-link {
+      display: none;
+  }
+
+  .hamburger-menu {
+      display: block;
+  }
+
+  #mobile-nav.active {
+      display: flex;
+  }
+
+  .hero {
+      flex-direction: column;
+      text-align: center;
+      background-size: cover;
+      position: relative;
+  }
+
+  .hero-content h1 {
+      font-size: 2.5rem;
+  }
+
+  .hero-image img {
+      max-width: 200px;
+      margin-right: 3px;
+  }
+
+  .hero-content p {
+      font-size: 1rem;
+  }
+  /* Carousel Styling */
+.about {
+  background-image: url('../img/image.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: rgb(3, 3, 3);
+  text-align: center;
+  padding: 20px 20px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-size: 236.5%;
+  
+}
+
+.about h2 {
+  font-size: 2.5rem; /* Adjust the heading size */
+  margin-bottom: -20px; /* Add spacing below the heading */
+  color: #333; /* Ensure good contrast with background */
+}
+
+
+.carousel {
+  position: relative;
+  max-width: 2000px; /* Increase max-width for larger carousel */
+  margin: auto;
+  overflow: hidden;
+  height: 760px;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  text-align: center;
+  padding: 2rem; /* Increase padding for more space */
+}
+
+.carousel-slide img {
+  max-width: 500px; /* Ensure the image size */
+  margin-bottom: 1.5rem; /* Add space below the image */
+  border: 5px solid #000000; /* Add a light gray border as a frame */
+  border-radius: 10px; /* Optional: Rounded corners for a softer look */
+}
+
+.carousel-slide img[alt="Profile 3"] {
+  width: 600px; /* Adjust width */
+  height: 400px; /* Adjust height */
+  object-fit: cover; /* Ensure proper aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  margin-bottom: 1.5rem;
+  
+}
+
+.carousel-slide img[alt="Profile 4"] {
+  width: 900px; /* Adjust width */
+  height: 390px; /* Adjust height */
+  object-fit: cover; /* Ensure proper aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  margin-bottom: 1.5rem;
+  
+}
+
+.carousel-slide img[alt="Profile 5"] {
+  width: 900px; /* Adjust width */
+  height: 390px; /* Adjust height */
+  object-fit: cover; /* Ensure proper aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  margin-bottom: 1.5rem;
+  
+}
+.carousel-slide img[alt="Profile 6"] {
+  width: 900px; /* Adjust width */
+  height: 300px; /* Adjust height */
+  object-fit: cover; /* Ensure proper aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  margin-bottom: 1.5rem;
+}
+
+.carousel-slide img[alt="Profile 7"] {
+  width: 900px; /* Adjust width */
+  height: 450px; /* Adjust height */
+  object-fit: cover; /* Ensure proper aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  margin-bottom: 1.5rem;
+}
+
+.carousel-slides p{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color:#000000;
+  margin: -1rem 0; /* Add proper spacing without pushing it too far */
+  background-color: #f0f0f0; /* Add white background */
+  border-radius: 5px; /* Optional: Add rounded corners for a modern look */
+  display: inline-block; /* Keeps the background size close to the text */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4); /* Optional: Add a subtle shadow */
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem; /* Increase button size */
+  cursor: pointer;
+  font-size: 2rem; /* Increase button icon size */
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 20px; /* Adjust position for larger buttons */
+}
+
+.next-btn {
+  right: 20px; /* Adjust position for larger buttons */
+}
+
+.carousel-btn:hover {
+  background-color: #f39c12;
+}
+
+}
+
