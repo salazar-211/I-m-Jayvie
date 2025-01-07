@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+<header>
+    <nav>
+        <ul id="nav-links">
+            <li class="logo"><img src="./img/logo_jv.png" alt="Jayvie Logo"></li>
+            <li class="desktop-link"><a href="#home">Home</a></li>
+            <li class="desktop-link"><a href="#about">About</a></li>
+            <li class="desktop-link"><a href="#projects">Projects</a></li>
+            <li><a href="#contact" class="contact-btn">Contact Me</a></li>
+            <li class="hamburger-menu" id="hamburger-menu">&#9776;</li>
+        </ul>
+        <ul id="mobile-nav" class="mobile-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Hi, I'm Jayvie</h1>
+        <div class="social-links">
+            <a href="https://www.facebook.com/jayvie.mendoza.370/" class="facebook" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/jjayv_11?igsh=a25qY2pvbmNxYTZi" class="instagram" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jayvie-mendoza-a288b1270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/salazar-211" class="github" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <p>Aspiring Software Developer | Web Enthusiast</p>
+        <a href="#projects" class="btn">VIEW MY WORK</a>
+    </div>
+    <div class="hero-image">
+        <img src="./img/jv_profile.png" alt="Jayvie's Picture">
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="carousel">
+        <button class="carousel-btn prev-btn" aria-label="Previous Slide">&#10094;</button>
+        <div class="carousel-slides">
+            <div class="carousel-slide">
+                <img src="./img/hult-prize.jpg" alt="Profile 1">
+                <p>In my second year of college, I was part of a team called WearTech, where we represented our school in a start-up app competition. 
+                    I served as the Chief Technology Officer (CTO) and gained valuable experience in tech leadership and innovation.</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="./img/hult-prize-2.jpg" alt="Profile 2">
+                <p>I truly enjoyed this experience because it not only taught me valuable 
+                    lessons but also expanded my network and connections.</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="./img/me.jpg" alt="Profile 3">
+                <p>In my third year of college , I was unexpectedly elected as the Vice President for SDG
+                     in our Supreme Student Council. It was my first time joining student leadership, and 
+                     while the high position was initially overwhelming, I saw it as a great opportunity and embraced the challenge.
+                </p>
+            </div>
+            <div class="carousel-slide">
+                <img src="./img/love.jpg" alt="Profile 4">
+                <p>Although it was challenging, being a student leader turned out to be a truly rewarding experience. 
+                    I discovered so much about myself and gained valuable insights through this journey.
+                     I also had the chance to meet diverse individuals, each with unique dreams and aspirations in life.</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="./img/ml.jpg" alt="Profile 5">
+                <p>I also joined a Mobile Legends tournament at school, and my team was really 
+                    strong—shoutout to my awesome classmates! We spent a week at the main campus 
+                    in Alangilan for the tournament. Although we didn’t win, I had a lot of fun, 
+                    laughed a lot, and grew as a team leader during that time.</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="./img/ey.jpg" alt="Profile 6">
+                <p>In my fourth year, I focused more on my journey as a programmer 
+                    since our capstone project was approaching. As the programmer in our group, 
+                    I went through countless sleepless nights coding, but by God's grace, 
+                    I was able to execute the codes and fix the errors successfully. 
+                    There were even times when I forgot a semicolon and spent almost two 
+                    hours searching for it—haha! It was an amazing journey.</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="./img/ey1.jpg" alt="Profile 7">
+                <p>By God's grace, we successfully defended our 
+                    capstone project. It was such a fulfilling feeling to have developed an innovative 
+                    solution through technology. It was incredibly stressful, though, and I ended 
+                    up stress eating, which led to gaining some weight!</p>
+            </div>
+        </div>
+        <button class="carousel-btn next-btn" aria-label="Next Slide">&#10095;</button> 
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <p>Here are some of the projects I've worked on:</p>
+  
+    <div class="project-cards">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="./img/map.png" alt="Capstone Project Screenshot">
+        <div class="project-content">
+          <h3>Interactive GIS Mapping System</h3>
+          <p>Capstone project developed for the 
+            Agriculture Office of Mabini, providing an innovative solution for monitoring registered and 
+            non-registered fishing boat owners. The system utilizes Leaflet.js to visualize fishing gear, vessels, 
+            and demographic data, with features like dynamic markers, search functionality, and filtering.</p>
+          <p><strong>Technologies:</strong> Leaflet.js, Chart.js, MySQL, HTML, CSS, JavaScript, PHP, GeoJson, MapTiler</p>
+          
+          <!-- View GitHub link -->
+          <a href="https://github.com/salazar-211/mao" target="_blank" class="project-link">View GitHub</a>
+  
+          <!-- Button to Show Video -->
+          <button class="view-video-btn" onclick="toggleVideo1()">View Demo Video</button>
+  
+          <!-- Video container (Initially hidden) -->
+          <div class="project-video" id="videoContainer" style="display: none;">
+            <video controls width="100%">
+              <source src="./img/video demo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="./img/fish screen.jpg" alt="Online Fish Market" class="fish-market-img">
+        <div class="project-content">
+          <h3>Mabini Online Fish Market</h3>
+          <p>The Fish Delivery App title "Mabini Online Fish Market" is a Flutter-based mobile
+             application designed to facilitate the delivery of fish and seafood products in Mabini. 
+             It includes features such as user authentication, a home page, settings, and a navigation
+              drawer for easy access to different parts of the app.</p>
+          <p><strong>Technologies:</strong> Dart</p>
+          
+          <!-- View GitHub link -->
+          <a href="https://github.com/salazar-211/fish_delivery_app" target="_blank" class="project-link">View GitHub</a>
+  
+          <!-- Button to Show Video -->
+          <button class="view-video-btn" onclick="toggleVideo2()">View Demo Video</button>
+  
+          <div class="project-video" id="videoContainer2" style="display: none;">
+            <video class="responsive-video" controls>
+              <source src="./img/video fish.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          
+        </div>
+      </div>
+  
+      <!-- Add more projects as needed -->
+    </div>
+  </section>
+  
+  <script>
+   // Toggle function for video 1
+function toggleVideo1() {
+  var videoContainer = document.getElementById("videoContainer");
+  if (videoContainer.style.display === "none") {
+    videoContainer.style.display = "block";
+  } else {
+    videoContainer.style.display = "none";
+  }
+}
+
+// Toggle function for video 2
+function toggleVideo2() {
+  var videoContainer2 = document.getElementById("videoContainer2");
+  if (videoContainer2.style.display === "none") {
+    videoContainer2.style.display = "block";
+  } else {
+    videoContainer2.style.display = "none";
+  }
+}
+
+    </script>
+  
+  
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out via email or connect with me on social media!</p>
+    
+    <!-- Email Section -->
+    <div class="email-contact">
+      <p>Email me at:</p>
+      <a href="jayviemendoza21@gmail.com">jayviemendoza21@gmail.com</a>
+    </div>
+    
+    <!-- Social Links Section -->
+    <div class="social-links">
+      <a href="https://www.facebook.com/jayvie.mendoza.370/" class="facebook" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/jjayv_11?igsh=a25qY2pvbmNxYTZi" class="instagram" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/jayvie-mendoza-a288b1270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/salazar-211" class="github" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+  
+
+<script src="./js/scripts.js"></script>
+</body>
+</html>
